@@ -20,7 +20,17 @@ h1, h2, h3, h4, p, a {
 h1, h2, h3, h4 {	
     margin-bottom: 42px;	
 }
+   
+.project-grid-container {
+  display: flex;
+  justify-content: center;
+}    
     
+.project-grid {
+    flex-wrap: wrap;
+    display: flex;
+}
+ 
 .figure {
     text-align: center;
     margin-bottom: 36px;
@@ -28,10 +38,15 @@ h1, h2, h3, h4 {
     justify-content: flex-start;
     display: flex;
 }
-    
-.project-grid {
-    flex-wrap: wrap;
-    display: flex;
+
+.figcaption {
+    position: relative;
+    left: auto;
+    right: auto;
+    font-size: 24px;
+    margin-top: -2px;
+    line-spacing: 1;
+    float: ;
 }
     
 a {	
@@ -79,16 +94,6 @@ a {
     margin-right: auto;
     margin-top: 48px;
     margin-bottom: 54px;
-}
-    
-.figcaption {
-    position: relative;
-    left: auto;
-    right: auto;
-    font-size: 24px;
-    margin-top: -2px;
-    line-spacing: 1;
-    float: ;
 }
     
 .project-header {
@@ -152,7 +157,10 @@ a {
 </div>
 </div>
 
+<div class="project-grid container">
+    
 <div class="project-grid">
+
 <div class="figure">
 <a href="https://nigeldurham.github.io/ux/sunday.html"><img class="sunday-screen" src="afinale.png"></a>
 <div class="figcaption">
@@ -198,6 +206,8 @@ a {
 </figure>
 </div>    
 
+</div>
+    
 </div>
     
 </body>
