@@ -108,6 +108,22 @@ h1, h2, h3, h4 {
     justify-content: flex-start;
     display: flex;
 }
+ 
+.container {
+	border: 3px solid blue;
+	padding: 20px 40px 40px;
+	max-width: 640px;
+	display: flex;
+	&__image {
+		margin: 20px 30px 0 0;
+		width: 200px;
+		object-fit: contain;
+		align-self: flex-start;
+	}
+	&__text {
+		flex: 1 1 auto;
+	}
+    
     
 .caption {
     position: relative;
@@ -271,19 +287,17 @@ a:hover {
 </div>
 </div>
 
-<div class="project-grid-container">
-
-<div class="project-grid">
-
-<figure style= "padding: 45px 15px">
+<div class="container">
+<div class="container__image">
 <a href="https://nigeldurham.github.io/ux/blueberry.html"><img class="blueberry-screen" src="blueberry.png"></a>
-<div class="caption">
+<div class="container__text">
 <a href="https://nigeldurham.github.io/ux/blueberry.html" class="project-header">blueberry<br></a>
 <a href="https://nigeldurham.github.io/ux/blueberry.html" class="project-subheader">flow redesign<br></a> 
 <!--- <a href="https://nigeldurham.github.io/ux/blueberry.html" class="project-subheader" style="line-height: 2; font-size: 24px; font-weight: 500">UX&nbsp;&nbsp;UI</a> ---> 
-</figure>
 </div>
-    
+</div> 
+</div>   
+
 <!--- <figure style= "padding: 45px 15px">
 <a href="https://nigeldurham.github.io/ux/airbnb.html"><img class="airbnb-screen" src="airbnbfinal.png"></a>
 <figcaption style="text-align: center">
