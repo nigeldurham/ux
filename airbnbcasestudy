@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>nigel airbnb case study</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>   
+@font-face {
+    font-family: lato;
+    src: url(Lato-Light.ttf);
+}    
+body {
+    font-family: lato-light;
+    color: #36454f;
+    background-color: white;
+}    
+h1, h2, h3, h4, p, a {
+    font-weight: 100;
+}    
+h1, h2, h3, h4 {
+    margin-bottom: 54px;
+}    
+.dots {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -32px;
+    margin-bottom: 0px;
+    height: 22.5px;
+}    
+.greeting {
+    font-size: 119px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 74px;
+}    
+.title {
+    font-size: ;
+    margin-top: 26%;
+    text-align: center;
+    margin-right: ;
+    margin-left: ;
+    font-weight: ;
+    margin-bottom: -8px;
+}    
+.intro {
+    font-size: 17px;
+    margin-top: 12px;
+    text-align: center;
+    margin-right: 0px;
+    margin-left: 0px;
+    line-height: ;
+    margin-bottom: -8px;
+    font-weight: ;
+}    
+.section-header {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: ;
+    margin-left: 62px;
+    margin-right: 62px;
+    line-height: 1.5;
+}    
+.project-block {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}    
+.process-header {
+    font-size: 18px;
+    margin-bottom: 12px;
+    margin-top: 0px;
+    font-weight: ;
+}    
+.process-subheader {
+    font-size: 17px;
+    margin-top: 0px;
+    margin-left: 54px;
+    margin-right: 54px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}    
+.process-subsubheader {
+    font-size: 17px;
+    margin-top: 0px;
+    margin-left: 54px;
+    margin-right: 54px;
+    margin-bottom: 32px;
+    line-height: 1.5;
+}    
+.process-subsubsubheader {
+    font-size: 17px;
+    margin-top: -18px;
+    margin-left: 54px;
+    margin-right: 54px;
+    margin-bottom: 32px;
+    line-height: 1.5;
+}    
+.event {
+    width: 70px;
+    margin-top: -54px;
+    margin-bottom: 12px;
+}    
+.persona1 {
+    width: 300px;
+    margin-top: -37px;
+    margin-bottom: 12px;
+}    
+.persona2 {
+    width: 300px;
+    margin-top: -24px;
+    margin-bottom: 12px;
+}
+    
+.midfi {
+    width: 150px;
+    margin-top: -36px;
+    margin-bottom: 12px;
+}    
+.problem {
+    width: 325px;
+    margin-bottom: 12px;
+    margin-top: -42px;
+}    
+.task {
+    width: 300px;
+    margin-bottom: 12px;
+    margin-top: -36px;
+}    
+.note1 {
+    height: 20px;
+    margin-bottom: -5px;
+    margin-right: 0px;
+}    
+.note2 {
+    height: 20px;
+    margin-bottom: -5px;
+    margin-right: 0px;
+}    
+.note3 {
+    height: 20px;
+    margin-bottom: -5px;
+    margin-right: 0px;
+}    
+.note4 {
+    height: 20px;
+    margin-bottom: -5px;
+    margin-right: 0px;
+}    
+.note5 {
+    height: 20px;
+    margin-bottom: -5px;
+    margin-right: 0px;
+}    
+.note6 {
+    height: 20px;
+    margin-bottom: -5px;
+    margin-right: -1px;
+}    
+.project-image {
+    width: 300px;
+    margin-bottom: 32px;
+    margin-top: 4px;
+}    
+.project-image1 {
+    width: 300px;
+    margin-bottom: 24px;
+    margin-top: -36px;
+    margin-left: 0px;
+}    
+.high-fi {
+    width: 275px;
+    margin-bottom: 24px;
+    margin-top: -36px;
+    margin-left: 0px;
+}    
+.project-image2 {
+    width: 275px;
+    margin-bottom: 24px;
+    margin-top: -36px;
+    margin-left: 0px;
+}    
+.white-board {
+    width: 300px;
+    margin-top: -36px;
+    margin-bottom: 24px;
+}    
+.post-it {
+    width: 300px;
+    margin-top: -36px;
+    margin-bottom: 26px;
+}    
+.project-image3 {
+    width: 300px;
+    margin-bottom: 12px;
+    margin-top: -36px;
+    margin-bottom: 24px;
+}    
+.results {
+    width: 80px;
+    margin-top: -36px;
+    margin-bottom: 14px;
+}    
+a {
+    color: black
+    border-bottom: 0px;
+    font-size: 24px;
+    text-decoration: unset;
+    font-weight: 300;
+}    
+.back-button {
+    img-align: right;
+    margin-right: ;
+    height: 25px;
+    margin-bottom: 48px; 
+    margin-top: -12px;
+}    
+.topnav {
+  position: fixed;
+  color: black;
+  right: 0;
+}    
+.topnav #mylinks {
+  display: none;
+}    
+.topnav a {
+    font-size: 20px;
+    padding: 11px 18px;
+    color: black;
+    margin-top: 0px;
+    display: block;
+    text-align: right;
+    margin-right: 6px;
+}    
+.topnav a.icon {
+  margin-right: 12px;
+  font-size: 24px;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: black;
+  margin-top: 28px;
+}    
+.active {
+  color: black;
+  background-color: white;
+}    
+#nav-toggle { position: absolute; right: 5.0%; top: 5.0%; }   
+#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 1px;
+  width: 28px;
+  background: black;
+  position: absolute;
+  display: block;
+  content: '';
+  text-align: right;
+}    
+#nav-toggle span:before {
+  top: -8px; 
+}    
+#nav-toggle span:after {
+  bottom: -8px;
+}
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 325ms ease-in-out;
+}    
+#nav-toggle.active span {
+  background-color: transparent;
+}    
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}    
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}    
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}    
+    
+@media only screen and (min-device-width: 768px) {  
+
+.title {
+    font-size: 10vh;
+    text-align: center;
+    margin-right: 84px;
+    margin-left: 84px;
+    margin-top: 14.5%;
+}    
+.title2 {
+    margin-left: 34px;
+    margin-top: 25px;
+    font-size: 54px;
+}    
+.clipboard {
+    width: 28px;
+    margin-bottom: 17px;
+    margin-right: 8px;
+}    
+.project-block {
+    text-align: center;
+    margin-bottom: 68px;
+    margin-top: 42px;
+}    
+.dots {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 72px;
+    margin-bottom: 0px;
+    height: 2px;
+    width: 43px;
+}    
+.greeting {
+    font-size: 119px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 54px;
+}    
+.opening {
+    font-size: 48px;
+    margin-bottom: 12px;
+    margin-top: 260px;
+}    
+a {
+    color: #36454f;
+    border-bottom: 0px;
+    font-size: 60px;
+    text-decoration: unset;
+    font-weight: 300;
+}  
+a.links {
+    color: #36454f;
+    border-bottom: 0px;
+    font-size: 36px;
+    text-decoration: unset;
+    font-weight: 300;
+}    
+a:hover {
+    color: #4a82b5;
+    opacity: 79.5%;
+}  
+.emoji {
+    width: 75px;
+    margin-bottom: -5px;  
+    margin-left: 12px;
+}    
+.intro {
+    font-size: 10vh;
+    text-align: center;
+    margin-right: 84px;
+    margin-left: 84px;
+    margin-bottom: -20px;
+}    
+.section-header {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: ;
+    margin-left: ;
+    line-height: 1.5;
+}    
+.block {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}    
+.process-header {
+    font-size: 34px;
+    margin-bottom: 12px;
+    margin-top: 24px;
+}    
+.process-subheader {
+    font-size: 24px;
+    margin-top: 28px;
+    margin-left: 383px;
+    margin-right: 383px;
+    margin-bottom: 22px;
+    line-height: 2;
+}    
+.process-subsubheader {
+    font-size: 24px;
+    margin-top: 24px;
+    margin-left: 383px;
+    margin-right: 383px;
+    margin-bottom: 28px;
+    line-height: 2;
+}    
+.process-subsubsubheader {
+    font-size: 24px;
+    margin-top: 24px;
+    margin-left: 383px;
+    margin-right: 383px;
+    margin-bottom: 28px;
+    line-height: 2;
+}
+.event {
+    width: 200px;
+    margin-top: 192px;
+    margin-bottom: 24px;
+}    
+.persona1 {
+    width: 787.5px;
+    margin-top: 92px;
+    margin-bottom: 12px;
+}    
+.persona2 {
+    width: 787.5px;
+    margin-top: -28px;
+    margin-bottom: 48px;
+}    
+.midfi {
+    width: 262.5px;
+    margin-top: 80px;
+    margin-bottom: 24px;
+}    
+.problem {
+    width: 722.5px;
+    margin-top: 82px;
+    margin-bottom: 38px;
+}
+.solution {
+    width: 718.5px;
+    margin-top: 108px;
+    margin-bottom: 38px;
+}    
+.task {
+    width: 556.5px;
+    margin-bottom: 12px;
+    margin-top: 56px;
+}    
+.note1 {
+    height: 35px;
+    margin-bottom: -7px;
+}    
+.note2 {
+    height: 35px;
+    margin-bottom: -7px;
+}    
+.note3 {
+    height: 35px;
+    margin-bottom: -8px;
+}
+.note4 {
+    height: 35px;
+    margin-bottom: -8px;
+}    
+.note5 {
+    height: 35px;
+    margin-bottom: -8px;
+}   
+.note6 {
+    height: 35px;
+    margin-bottom: -8px;
+    margin-top: 12px;
+}   
+.project-image {
+    width: 800px;
+    margin-bottom: 0px;
+    margin-top: 98px;
+    margin-left: -2px;
+}    
+.project-image1 {
+    width: 724.5px;
+    margin-bottom: 34px;
+    margin-top: 50px;
+    margin-right: -3px;
+}    
+.high-fi {
+    width: 475.5px;
+    margin-bottom: 36px;
+    margin-top: 36px;
+    margin-left: 0px;
+}    
+.project-image2 {
+    width: 725.5px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    margin-left: 0px;
+}    
+.white-board {
+    width: 723.5px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}    
+.post-it {
+    width: 711.5px;
+    margin-bottom: 12px;
+    margin-top: 24px;
+}    
+.project-image3 {
+    width: 725.5px;
+    margin-bottom: 54px;
+    margin-top: 24px;
+    margin-right: -3px;
+}    
+.results {
+    width: 123.5px;
+    margin-top: 64px;
+    margin-bottom: 32px;
+}    
+.back-button {
+    height: 30px;
+    margin-right: ;
+    margin-top: 0px; 
+    margin-bottom: 54px; 
+    opacity: 68%;
+}    
+#nav-toggle { position: absolute; margin-right: 15px; margin-top: 25px; }
+#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 2px;
+  width: 51px;
+  background: #36454f;
+  position: absolute;
+  display: block;
+  content: '';
+  text-align: right;
+}    
+#nav-toggle span:before {
+  top: -12px; 
+}    
+#nav-toggle span:after {
+  bottom: -12px;
+}
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 325ms ease-in-out;
+}    
+#nav-toggle.active span {
+  background-color: transparent;
+}    
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}    
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}    
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}    
+.nav-list {
+  display: block !important;
+  font-size: 23px;
+}    
+</style>  
+</head>  
+<body>
+
+<!--- <div class="topnav">
+<div id="mylinks">
+<a href="https://nigeldurham.github.io/ux/about.html">about</a>
+<a href="https://nigeldurham.github.io/ux/index.html" style="font-weight: bold">work</a>
+<a href="https://nigeldurham.github.io/ux/contact.html">contact</a>
+</div>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+<i class="fa fa-bars"></i>
+</a>
+</div> --->
+    
+<div class="title2">
+<a href="https://nigeldurham.github.io/ux/airbnb.html" style="text-align: left">case study</a>
+</div>
+<div id="nav-toggle"><span></span></div>
+
+<div h1 class="title">airbnb</h1>
+<!--- <h2 class="intro" style="color: hot pink">case study</h2> --->
+<h2 class="section-header">project deliverables</h3>
+</div>
+
+<img class="dots" src="rrectangle.png">
+    
+<!--- <div class="project-block">
+    <img class="event" src="event.png"> 
+    <h3 class="process-header">project overview</h3>
+    <h4 class="process-subheader">our team of 4 designers created a marketplace for events and spaces. my contributions included original interface design, brand design, and presentation design</h4>
+    <!--- <h4 class="process-subheader"><style=font-weight: bold>100% of users enjoyed the experience<br><br>100% claimed it melded seamlessly with the airbnb experience</h4></style> 
+</div> --->
+    
+<div class="project-block">
+    <h3 class="opening">personas</h3>
+    <img class="persona1" src="personaspace.png"> 
+    <!--- <h4 class="process-subheader">aaron's seeking to share a space on airbnb</h4>
+    <h4 class="process-subsubheader">he's a young millenial who enjoys helping others, actively seeking new connections, and creating meaningful experiences</h4> --->
+</div>
+    
+<div class="project-block">
+    <img class="persona2" src="personaevent.png"> 
+    <!--- <h3 class="process-header">persona | beth</h3>
+    <h4 class="process-subheader">beth's seeking an open space to host her event</h4>
+    <h4 class="process-subsubheader">she is a responsible, confident professional who follows a strict schedule</h4> --->
+</div>
+    
+<div class="project-block">
+    <img class="problem" src="airbnb problem.png"> 
+    <h3 class="process-header">problem statement</h3>
+    <h4 class="process-subheader">event hosts are seeking spaces to host their events</h4>
+    <h4 class="process-subsubheader">how might we connect available spaces with events seamlessly through the airbnb platform?</h4>
+</div>
+    
+<div class="project-block">
+    <img class="solution" src="airbnb ace.png"> 
+    <h3 class="process-header">solution</h3>
+    <h4 class="process-subheader">we wireframed a solution that allows events and spaces to exist independently on the platform - users can find one another via a central events hub</h4>
+</div>
+    
+<div class="project-block">
+    <img class="midfi" src="midfi.png"> 
+    <h3 class="process-header">tasks</h3>
+    <h4 class="process-subheader">introducing "ace events" branding</h4>
+    <h4 class="process-subsubheader">users are tasked with either posting a space to be found (aaron's flow), or posting an event and finding a space suitable for that event (beth's flow)</h4>
+    <h4 class="process-subsubsubheader">// following are the primary <style="border-bottom: 1px;">pain points</style> for users across task flows and prototype iterations</h4>
+</div>
+    
+<div class="project-block">
+    <img class="project-image1" src="airbnb iteration 1.0.png"> 
+    <h3 class="process-header">iteration 1</h3>
+    <h4 class="process-subheader"><img class="note3" src="note 3 color.png"> landing page search bar location is uncommon, confusing<br><img class="note6" src="note 6 color 2.png"> details page event tags were obscure, unclear</h4>
+</div>
+    
+<div class="project-block">
+    <img class="task" src="airbnb iteration 2.0.png">
+    <h3 class="process-header">iteration 2</h3>
+    <h4 class="process-subheader">profile (left) and detail confirmation (right) finalized for second iteration usability tests</h4>
+</div>
+    
+<div class="project-block">
+    <img class="project-image1" src="airbnb iteration 2.1.png">
+    <h3 class="process-header">iteration 2</h3>
+    <h4 class="process-subheader"><img class="note1" src="note 1 color.png"> landing page CTA "mode" was unclear for the task flow, distracting<br><img class="note2" src="note 2 color.png"> landing page search bar suggestions were confusing</h4>
+</div>
+
+<div class="project-block">
+    <img class="high-fi" src="airbnb iteration 3.0.png">
+    <h3 class="process-header">iteration 3</h3>
+    <h4 class="process-subheader">// final iteration</h4>
+    <h4 class="process-subsubheader">high fidelity prototype with design modifications following two rounds of usability testing</h4>
+    <h4 class="process-subsubsubheader">notes refer to most <style="border-bottom: 1px;">impactful modifications</style></h4>
+    </div>
+
+<div class="project-block">
+    <img class="post-it" src="airbnb iteration 3.1.png">
+    <h3 class="process-header" style="font-size: 38px">usability notes</h3>
+    <h4 class="process-subheader"><img class="note3" src="note 3 color.png"> introduced product branding in promo slot on the airbnb app<br><img class="note5" src="note 5 color.png"> users are invited to click to explore product</h4>
+</div>
+
+<div class="project-block">
+    <img class="white-board" src="airbnb iteration 3.2.png">
+    <h3 class="process-header" style="font-size: 38px">usability notes</h3>
+    <h4 class="process-subheader"><img class="note5" src="note 5 color.png"> added ability to manage listings</h4>
+</div>
+    
+<div class="project-block">
+    <img class="project-image2" src="airbnb iteration 3.3.png">
+    <h3 class="process-header" style="font-size: 38px">usability notes</h3>
+    <h4 class="process-subheader"><img class="note2" src="note 2 color.png"> social sharing added, including messaging, following addition of event details<br><img class="note2" src="note 2 color.png"> users can connect social accounts for seamless sharing, promotion</h4>
+</div> 
+    
+<div class="project-block">
+    <img class="project-image3" src="airbnb iteration 3.4.png">
+    <h3 class="process-header" style="font-size: 38px">usability notes</h3>
+    <h4 class="process-subheader"><img class="note4" src="note 4 color.png"> infinite scroll added on search page for open browsing of local listings</h4>
+</div>
+
+<div class="project-block">
+    <img class="results" src="resultscolor.png">
+    <h3 class="process-header">results</h3>
+    <h4 class="process-subheader" style="font-size: 28px"><b>94%</b> of users enjoyed app flow</h4>
+    <h4 class="process-subsubheader" style="font-size: 28px"><b>100%</b> completed task goals</h4>
+    <h4 class="process-subsubsubheader">brand-familiar users commented that our product fit seamlessly within the airbnb experience</h4>
+    <h4 class="process-subheader; style="margin-top: 42px; text-align: center;"><a href="https://invis.io/G5NTUS2FAPJ" class="links" style="color: #5c7cd6; font-weight: normal;">prototype</h4></a>                                                                                         
+</div>                                            
+    
+<div style="text-align:center;">    
+<a href= "https://nigeldurham.github.io/ux/airbnb.html"><img class="back-button" src= "backarrow1.png"></a> 
+</div>
+
+<script>
+function myFunction() {
+var x = document.getElementById("mylinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>   
+                             
+<script>
+document.querySelector( "#nav-toggle" )
+  .addEventListener( "click", function() {
+    this.classList.toggle( "active" );
+  });
+</script>                          
+                                    
+</div>
+
+</body>
+</html>
