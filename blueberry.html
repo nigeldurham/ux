@@ -507,6 +507,32 @@ a:hover {
     margin-right: 64px;
     text-align: right;
 }
+button.soft {
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+  margin-right: 24px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  z-index: 1;
+  font-size: 16px;
+  margin-top: 38px;
+  margin-left: 5.5px;
+}
+.show {display: block;}
+a.link {
+    color: #36454f;
+    border-bottom: 0px;
+    font-size: 24px;
+    text-decoration: unset;
+    font-weight: 300;
+}
     }
         }
 </style>
@@ -517,7 +543,13 @@ a:hover {
 <div class="title2">
 <a href="https://nigeldurham.github.io/ux/index.html" style="text-align: left;">products</a>
 </div>
-<div id="nav-toggle"><span></span></div>
+<button.soft onclick="myFunction()" class="dropbtn"><div id="nav-toggle"><span></span></button.soft>
+<div id="myDropdown" class="dropdown-content">
+<a href="https://nigeldurham.github.io/ux/about.html" class="link" style="opacity: 50%">about</a>
+<a href="https://nigeldurham.github.io/ux/index.html" class="link">work</a>
+<a href="https://nigeldurham.github.io/ux/contact.html" class="link" style="opacity: 50%">contact</a>
+</div>
+</div>
 
 <h1 class="title">blueberry</h1>
 <h2 class="intro">ux</h2>
@@ -608,13 +640,20 @@ var x = document.getElementById("mylinks");
     x.style.display = "block";
   }
 }
-</script>   
+</script>  
+    
 <script>
 document.querySelector( "#nav-toggle" )
   .addEventListener( "click", function() {
     this.classList.toggle( "active" );
   });
 </script>   
+ 
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+</script>
     
 </div>
 
