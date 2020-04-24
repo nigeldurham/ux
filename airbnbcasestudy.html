@@ -696,9 +696,8 @@ button.lame {
     position: absolute;
     overflow: auto;
     z-index: 1;
-    font-size: 18px;
-    margin-top: 30px;
-    margin-left: 1px;
+    margin-top: 38px;
+    margin-left: 4.5px;
 }
 .show {display: block;}
 a.linklink {
@@ -707,7 +706,7 @@ a.linklink {
     font-size: 24px;
     text-decoration: unset;
     font-weight: 300;
-    opacity: 60%;
+    opacity: 80%;
 }	
 .container {
     display: flex;
@@ -936,9 +935,17 @@ sup {
 </div>
 <button.lame onclick="myFunction()" class="dropbtn"><div id="nav-toggle"><span></span></button.lame>
 <div id="myDropdown" class="dropdown-content">
-<a href="https://nigeldurham.github.io/uxflex/index.html" class="linklink">about</a>
-<a href="#about" class="linklink">work</a>
+<a href="https://nigeldurham.github.io/ux/about.html" class="linklink">about</a>
+<a href="https://nigeldurham.github.io/ux/index.html" class="linklink">work</a>
+<ul style="list-style-type:none; margin-left: -39.5px;">
+<li style="opacity: 50%"><a href="https://nigeldurham.github.io/ux/blueberry.html"  class="li"> blueberry</a></li>
+<li style="opacity: 100%"><a href="https://nigeldurham.github.io/ux/airbnb.html"  class="li"> airbnb</li>
+<li style="opacity: 50%"><a href="https://nigeldurham.github.io/ux/sunday.html"  class="li"> sunday</li>
+<li style="opacity: 50%"><a href="https://nigeldurham.github.io/ux/covr.html"  class="li"> covr</li>
+<li style="opacity: 50%"><a href="https://nigeldurham.github.io/ux/immersive.html"  class="li"> immersive</li>
+</ul>
 <a href="#contact" class="linklink">contact</a>
+
 </div>
 </div>
 
@@ -1108,7 +1115,13 @@ document.querySelector( "#nav-toggle" )
   .addEventListener( "click", function() {
     this.classList.toggle( "active" );
   });
-</script>                          
+</script>      
+	
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+</script>
                                     
 </div>
 
