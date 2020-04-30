@@ -316,7 +316,63 @@ a.link {
     text-decoration: unset;
     font-weight: 300;
     font-family: lato-light;
-}		
+}
+.table {
+   display: table; 
+   margin: 0 auto;
+   margin-left: -10px;
+}
+ul#bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 9px;
+}
+ul#bar li {
+  display: inline;
+  padding: 64px;
+  font-family: crimson; 
+}
+li {
+  display: inline;
+}
+li a {
+  //display: block;
+}
+li a.active {
+  font-weight: bold;
+  font-size: 102px;
+  font-family: dmserif;
+}
+li a.products {
+  display: block;
+  color: #36454f;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 82px;
+  font-family: crimson; 
+  font-weight: bold;
+}
+li a.about {
+  display: block;
+  color: #36454f;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: crimson; 
+  font-weight: bold;
+}
+li a.contact {
+  display: block;
+  color: #36454f;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: crimson; 
+  font-weight: bold;
+}
   }
     }
     
@@ -325,7 +381,7 @@ a.link {
 
 <body>
 
-<!--- <div class="navbar"> --->
+<!--- <div class="navbar"> 
 <div class="title">
 <a href="https://nigeldurham.github.io/ux/about.html" style="text-align: left">about</a>
 </div>
@@ -339,11 +395,21 @@ a.link {
 <li style="opacity: 50%"><a href="https://nigeldurham.github.io/ux/sunday.html"  class="li"> sunday</li>
 <li style="opacity: 50%"><a href="https://nigeldurham.github.io/ux/covr.html"  class="li"> covr</li>
 <li style="opacity: 50%"><a href="https://nigeldurham.github.io/ux/immersive.html"  class="li"> immersive</li>
-</ul> --->
+</ul>
 <a href="https://nigeldurham.github.io/ux/contact.html" class="link" style="opacity: 50%">contact</a>
 </div>
 </div>
 <!--- </div> --->
+    
+<div>
+<div class="table">
+<ul id="bar">
+<li><a class="active" href="#home"  style="opacity: 40%; margin-left: 2px; font-weight: bold; font-family: dmserif; font-size: 102px;>Products</a></li>
+<li><a href="#news" class="active"">About</a></li>
+<li><a href="#contact" style="opacity: 40%; margin-left: 10px; font-weight: bold; font-family: dmserif; font-size: 102px;">Contact</a></li>
+</ul>
+</div>
+</div>
     
 <div>
 <div class="intro">
