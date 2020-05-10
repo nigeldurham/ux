@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nigel - COVR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@font-face {
+    font-family: lato;
+    src: url(Lato-Light.ttf);
+}  
+@font-face {
+    font-family: roboto;
+    src: url(Roboto-Light.ttf);
+}
+@font-face {
+    font-family: dmserif;
+    src: url(DMSerifDisplay-Regular.ttf);
+}
+body {	
+    font-family: lato-light;
+    font-weight: ;
+    color: #36454f;	
+    background-color: white;	
+}    
+h1, h2, h3, h4, p, a {
+    font-weight: 100;
+}        
+h1, h2, h3, h4 {
+    margin-bottom: 54px;
+}
+.dots {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 28px;
+    margin-bottom: 12px;
+    height: 30px;
+}
+.title {
+    font-size: ;
+    margin-top: 26%;
+    text-align: center;
+    margin-right: ;
+    margin-left: ;
+    font-weight: ;
+    margin-bottom: -8px;
+}
+.intro {
+    font-size: 17px;
+    text-align: center;
+    margin-right: 0px;
+    margin-left: 0px;
+    line-height: -7px;
+    font-weight: ;
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+.section-header {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-left: 32px;
+    margin-right: 32px;
+    line-height: 1.5;
+    margin-top: 12px;
+}
+.project-block {
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 48px;
+}
+.process-header {
+    font-size: 18px;
+    margin-bottom: 12px;
+    margin-top: 0px;
+    font-weight: ;
+}
+.process-subheader {
+    font-size: 17px;
+    margin-top: 0px;
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-bottom: 28px;
+    line-height: 1.5;
+}
+.team {
+    width: 65px; 
+    margin-top: -16px;
+    margin-left: 0px;
+    margin-bottom: 12px;
+}
+.task {
+    width: 112.5px; 
+    margin-bottom: 0px;
+    margin-top: -54px;
+}
+.project-image {
+    width: 300px;
+    margin-bottom: -24px;
+    margin-top: -42px;
+}
+.project-image1 {
+    width: 115px;
+    margin-bottom: 12px;
+    margin-top: -24px;
+    margin-left: 0px;
+}
+.project-image2 {
+    width: 125px;
+    margin-bottom: 12px;
+    margin-top: -24px;
+    margin-left: 0px;
+}
+.project-image3 {
+    width: 175px;
+    margin-bottom: 12px;
+    margin-top: -24px;
+}
+a {
+    color: black;
+    border-bottom: 0px;
+    font-size: 24px;
+    text-decoration: unset;
+    font-weight: 300;
+}
+.back-button {
+    img-align: right;
+    margin-right: ;
+    height: 25px;
+    margin-bottom: 54px; 
+    margin-top: -32px;
+    text-align: right;
+    }
+.topnav {
+  position: fixed;
+  color: black;
+  right: 0;
+}
+.topnav #mylinks {
+  display: none;
+  margin-right: 26px;
+  margin-top: -38px;
+}
+.topnav a {
+    font-size: 20px;
+    padding: 0px;
+    color: black;
+    margin-top: 0px;
+    display: block;
+    text-align: right;
+    margin-right: 6px;
+}
+.topnav a.icon {
+  margin-right: 31px;
+  font-size: 24px;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: black;
+  margin-top: 28px;
+}
+.active {
+  color: black;
+  background-color:;
+}
+#nav-toggle { position: absolute; right: 5%; top: 5%; }
+    
+@media only screen and (min-device-width: 768px) {
+    
+.title {
+    font-size: 10vh;
+    text-align: center;
+    margin-right: 84px;
+    margin-left: 84px;
+    margin-top: 128px;
+}    
+.title2 {
+    margin-left: 31px;
+    margin-top: 24px;
+    font-size: 54px;
+}    
+.clipboard {
+    width: 38px;
+    margin-bottom: 07px;
+    margin-right: 3px;
+}    
+.project-block {
+    text-align: center;
+    margin-bottom: 84px;
+    margin-top: 42px;
+}
+.dots {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 72px;
+    margin-bottom: 0px;
+    height: 22px;
+}
+.dots2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 72px;
+    margin-bottom: 0px;
+    height: 30px;
+}
+.greeting {
+    font-size: 119px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 54px;
+}
+a {
+    color: #36454f;
+    border-bottom: 0px;
+    font-size: 48px;
+    text-decoration: unset;
+    font-weight: 300;
+}
+.emoji {
+    width: 75px;
+    margin-bottom: -5px;  
+    margin-left: 12px;
+}
+.intro {
+    font-size: 72px;
+    margin-top: 0px;
+    text-align: center;
+    margin-right: 84px;
+    margin-left: 84px;
+    line-height: 1.5;
+}
+.section-header {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: ;
+    margin-top: 12px;
+    margin-left: 152px;
+    line-height: 1.5;
+    margin-right: 152px;
+}
+.project-block {
+    text-align: center;
+    margin-bottom: ;
+    margin-top: ;
+}
+.process-header {
+    font-size: 42px;
+    margin-bottom: 12px;
+    margin-top: 24px;
+    font-weight: ;
+}
+.process-subheader {
+    font-size: 28px;
+    margin-top: 24px;
+    margin-left: 383px;
+    margin-right: 383px;
+    margin-bottom: 28px;
+    line-height: 2;
+}
+.team {
+    width: 200px; 
+    margin-top: 204px;
+    margin-left: 0px;
+    margin-bottom: 32px;
+    opacity: 80%;
+}
+.task {
+    width: 250px; 
+    margin-bottom: -15px;
+    margin-top: 204px;
+    opacity: 68.5%;
+}
+.project-image {
+    width: 700px;
+    height: ;
+    margin-bottom: -64px;
+    margin-top: 22px;
+    margin-left: 0px;
+}
+.project-image1 {
+    width: 300px;
+    margin-bottom: 24px;
+    margin-top: 144px;
+    margin-right: 0px;
+}
+.project-image2 {
+    width: 300px;
+    margin-bottom: 24px;
+    margin-top: 144px;
+    margin-left: -2px;
+}
+.project-image3 {
+    width: 350px;
+    margin-bottom: 4px;
+    margin-top: 144px;
+    margin-right: 0px;
+}
+.supp {
+    font-size: 24px;
+    margin-top: -12px;
+    margin-left: 448px;
+    margin-right: 448px;
+    margin-bottom: 28px;
+    line-height: 2;
+}
+.back-button {
+    height: 37.5px;
+    margin-right: ;
+    margin-top: ;
+    margin-bottom: 54px;
+    text-align: center;
+    opacity: 68%;
+}
+#navbar {
+  overflow: hidden;
+  background-color: white;
+  text-align: right;
+  margin-right: 24px;
+  margin-top: 0px;
+  font-size: 24px;
+}
+#navbar a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: ;
+  text-decoration: none;
+  font-size: 24px;
+}
+#navbar a.active {
+  background-color: white;
+  color: black;
+}
+#nav-toggle { position: absolute; margin-right: 05px; margin-top: 14px; }
+#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 2px;
+  width: 38px;
+  background: #36454f;
+  position: absolute;
+  display: block;
+  content: '';
+  text-align: right;
+}   
+#nav-toggle span:before {
+  top: -10px; 
+}    
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 355ms ease-in-out;
+}    
+#nav-toggle.active span {
+  background-color: transparent;
+}    
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}    
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}    
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}    
+.nav-list {
+  display: block !important;
+  font-size: 23px;
+}
+    }
+        }
+    
+</style>
+</head>
+<body>
+
+<!--- <div class="topnav">
+<div id="mylinks">
+<a href="https://nigeldurham.github.io/ux/about.html">about</a>
+<a href="https://nigeldurham.github.io/ux/index.html" style="font-weight: bold">work</a>
+<a href="https://nigeldurham.github.io/ux/contact.html">contact</a>
+</div>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+<i class="fa fa-bars"></i>
+</a>
+</div> --->
+    
+<div class="title2">
+<img class="clipboard" src="circle check.png"><a href="https://nigeldurham.github.io/ux/index.html" style="text-align: left">work</a>
+</div>
+<div id="nav-toggle"><span></span></div>
+ 
+<h1 class="title">covr</h1>
+<h2 class="intro">gig application</h2>
+<h2 class="section-header">bringing traveling musicians &<br>event spaces together</h3>
+</div>
+</div>
+</div>
+
+<img class="dots" src="vtriangle.png">
+
+<!--- <div class="project-block">
+    <img class="team" src="musician.png"> 
+    <h3 class="process-header">imagine</h3>
+    <!--- <h4 class="process-subheader">you're a traveling musician: you've just arrived in new york city, with only a few bucks in hand, and are looking for a gig TONIGHT!</h4>
+</div> --->
+
+<div class="project-block">
+    <img class="task" src="wireframeresp.png"> 
+    <h3 class="process-header">ideation</h3>
+    <h4 class="process-subheader">deciding to focus on a niche market unique to new york city, i devised an application for freelance musicians who perform intimate events in bars or small venues</h4>
+</div>
+
+<div class="project-block">
+    <img class="project-image1" src="COVR Screen 1.png">
+    <h3 class="process-header">wireframing</h3>
+    <h4 class="process-subheader">centering-in on a mobile-first, location-based platform, i sought to connect artists with nearby performance spaces : artists are able to create a profile, search for nearby event spaces, and book open performance slots on an extended calendar</h4>
+</div>
+
+<div class="project-block">
+    <img class="project-image2" src="COVR Screen 2.png">
+    <h3 class="process-header">prototyping</h3>
+    <h4 class="process-subheader">running low-fidelity prototypes on marvel, i tested user flows for both businesses and artists. businesses check artist profiles and confirm bookings, while artists create a profile, share media, and message businesses in real time</h4>
+</div>
+
+<div class="project-block">
+    <img class="project-image2" src="Screen Shot 2020-04-16 at 11.11.41 PM.png">
+    <h3 class="process-header">usability testing</h3>
+    <h4 class="process-subheader">businesses noted that a multi-platform approach would be ideal for day-to-day booking, including tablet and mobile options. artists noted concerns about booking flexibility and venue-specific options for performers</h4>
+</div>
+
+<div class="project-block">
+    <img class="project-image2" src="COVR Screen 2.png">
+    <h3 class="process-header">feature prioritization</h3>
+    <h4 class="process-subheader">messaging and media interactions were prioritized for venue-matching, while artist-led requests were scaled back and social sharing was leveraged for on-the-fly events</h4>
+</div>
+
+<div class="project-block">
+    <img class="project-image2" src="COVR Screen 2.png">
+    <h3 class="process-header">final prototype</h3>
+    <h4 class="process-subheader">a cross-platform solution allowing artists and venues to confirm bookings and performance details, along with payment information and scheduling</h4>
+</div>
+
+<div class="project-block">
+    <img class="project-image3" src="COVR Screen 3.png">
+    <h3 class="process-header">product</h3>
+    <h4 class="process-subheader">a highly-interactive location-based cross-platform booking calendar and payment system for artists and performance venues</h4>
+    <h4 class="supp"><a href="https://nigeldurham.github.io/ux/covrcs" style="color: #5c7cd6; font-weight: normal; border-bottom: 1px solid currentColor;">case study</h4></a>
+</div>
+
+<div style="text-align: center">    
+<a href= "https://nigeldurham.github.io/ux/index.html"><img class="back-button" src= "backarrow1.png"></a> 
+</div>
+
+<script>
+function myFunction() {
+var x = document.getElementById("mylinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>  
+<script>
+document.querySelector( "#nav-toggle" )
+  .addEventListener( "click", function() {
+    this.classList.toggle( "active" );
+  });
+</script>
+
+</div>
+
+</body>
+</html>
