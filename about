@@ -749,9 +749,9 @@ li a.contact {
     
 <div class="table">
 <ul id="bar">
-<li><a class="inactiveabt" href="https://nigeldurham.github.io/ux/index.html">Products</a></li>
+<li><a class="inactiveabt" href="https://nigeldurham.github.io/ux/index">Products</a></li>
 <li><a class="active" href="#about">About</a></li>
-<li><a class="inactivecntct" href="https://nigeldurham.github.io/ux/contact.html">Contact</a></li>
+<li><a class="inactivecntct" href="https://nigeldurham.github.io/ux/contact">Contact</a></li>
 </ul>
 </div>
     
