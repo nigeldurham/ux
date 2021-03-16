@@ -56,12 +56,10 @@ h1, h2, h3, h4 {
     margin-top: 0px;
     margin-bottom: 0px;
 }
-a {	
-    color: #36454f;	
-    border-bottom: 1px;	
-    font-size: 52px;	
-    text-decoration: unset;
-    font-weight: 300;	
+.clickme {
+    margin-left: 98px; 
+    height: 112px; 
+    margin-top: 12px
 }
 a.me {	
     color: #7e96e0;	
@@ -72,18 +70,6 @@ a.me {
     opacity: ;
     font-family: 'dm serif display';
     opacity: 100%;
-}
-.clickme {
-    margin-left: 98px; 
-    height: 112px; 
-    margin-top: 12px
-}
-a {	
-    color: #36454f;	
-    border-bottom: 1px;	
-    font-size: 82px;	
-    text-decoration: unset;
-    font-weight: 300;	
 }
 a.li {	
     color: #36454f;	
@@ -113,10 +99,6 @@ ul#bar li {
 li {
   display: inline;
 }
-li a {
-  //display: block;
-  //font-size: 42px;
-}
 li a.active {
   font-weight: bold;
   font-size: 48px;
@@ -135,34 +117,6 @@ li a.inactivecntct {
   font-family: 'dm serif display';
   opacity: 40%;
   line-height: 1.7;
-}
-li a.products {
-  display: block;
-  color: #36454f;
-  text-align: left;
-  padding: 14px 16px;
-  text-decoration: none;
-  /*font-size: 82px;*/
-  font-family: crimson; 
-  font-weight: bold;
-}
-li a.about {
-  display: block;
-  color: #36454f;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: crimson; 
-  font-weight: bold;
-}
-li a.contact {
-  display: block;
-  color: #36454f;
-  text-align: right;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: crimson; 
-  font-weight: ;
 }
 ul#bar {
   list-style-type: none;
@@ -186,16 +140,6 @@ li a {
     
 @media only screen and (min-device-width: 768px) {  	 
 	
-.uparrow {
-    width: 25px
-}
-a {	
-    color: #36454f;	
-    border-bottom: 1px;	
-    font-size: 82px;	
-    text-decoration: unset;
-    font-weight: ;	
-}
 .intro {
     font-size: 12vh;
     text-align: center;
@@ -204,10 +148,6 @@ a {
     margin-top: 15%;
     margin-bottom: 0px;
     opacity: 100%;
-}
-a:hover {
-    color: #4a82b5;
-    opacity: 79.5%;
 }
 .me {
     font-size: 112px;
@@ -218,6 +158,16 @@ a:hover {
     margin-bottom: 0px;
     font-family: lato;
 }
+.clickme {
+    margin-left: 54.27%; 
+    height: 145px; 
+    margin-top: 13px;
+    opacity: 90%;
+}
+a:hover {
+    color: #4a82b5;
+    opacity: 79.5%;
+}
 a.me {	
     color: #7e96e0;	
     border-bottom: 1px;	
@@ -227,15 +177,13 @@ a.me {
     font-family: 'dm serif display';
     opacity: 100%;
 }
+a:hover {
+    color: #4a82b5;
+    opacity: 79.5%;
+}
 a.me:hover {
     color: #7e96e0;
     opacity: 69.5%;
-}
-.clickme {
-    margin-left: 54.27%; 
-    height: 145px; 
-    margin-top: 13px;
-    opacity: 90%;
 }
 a.li {	
     color: #36454f;	
@@ -243,18 +191,6 @@ a.li {
     font-size: 16px;	
     text-decoration: unset;
     font-weight: 300;	
-}
-a:hover {
-    color: #4a82b5;
-    opacity: 79.5%;
-}
-a.link {
-    color: #36454f;
-    border-bottom: 0px;
-    font-size: 24px;
-    text-decoration: unset;
-    font-weight: 300;
-    font-family: lato-light;
 }
 .table {
    display: table; 
@@ -304,51 +240,6 @@ li a.inactivecntct {
   font-size: 80px;
   font-weight: bold;
   line-height: 1;
-}
-li a.products {
-  display: block;
-  color: #36454f;
-  text-align: left;
-  padding: 14px 16px;
-  text-decoration: none;
-  /*font-size: 102px;*/
-  font-family: crimson; 
-  font-weight: ;
-}
-li a.about {
-  display: block;
-  color: #36454f;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: crimson; 
-  font-weight: bold;
-}
-li a.contact {
-  display: block;
-  color: #36454f;
-  text-align: right;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: crimson; 
-  font-weight: bold;
-}
-.project-header {
-   font-size: 82px; 
-   margin-top: 0px;
-   font-weight: bold;
-   line-height: 2;
-   clear: right;
-}    
-.icon1 {
-    width: 127.5px;
-    margin-top: 65px;
-    margin-left: 31px;
-}
-.icon2 {
-    width: 123px;
-    margin-top: 50px;
-    margin-left: 24px;
 }
   }
     }
