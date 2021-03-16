@@ -6,8 +6,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Lato:thin,light,regular,bold" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:light,regular" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Crimson+Pro:extra-light,light" rel="stylesheet">
 <!--- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -19,40 +17,6 @@ body {
     font-family: 'lato', sans serif;	
     color: #36454f;	
     background-color: white;	
-}
-#nav-toggle { position: absolute; right: 5.0%; top: 5.0%; }    
-#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px;}
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 2px;
-  width: 35px;
-  background: black;
-  position: absolute;
-  display: block;
-  content: '';
-  text-align: right;
-}    
-#nav-toggle span:before {
-  top: -8px; 
-}    
-#nav-toggle span:after {
-  bottom: -8px;
-}
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  transition: all 325ms ease-in-out;
-}    
-#nav-toggle.active span {
-  background-color: transparent;
-}    
-#nav-toggle.active span:before, #nav-toggle.active span:after {
-  top: 0;
-}    
-#nav-toggle.active span:before {
-  transform: rotate(45deg);
-}    
-#nav-toggle.active span:after {
-  transform: rotate(-45deg);
 }
 .container {
 	/*display: flex;*/
@@ -305,13 +269,6 @@ a:hover {
    font-family: ;
    opacity: 100%;
 }  
-.navbar {
-   background-color: white; 
-   top: 0;
-   position: fixed;
-   width: 100%;
-   padding-bottom: 25px;
-}
 .table {
    display: table; 
    margin: 0 auto;
@@ -332,10 +289,6 @@ ul#bar li {
 }
 li {
   display: inline;
-}
-li a {
-  //display: block;
-  //font-size: 42px;
 }
 li a.active {
   font-weight: bold;
@@ -358,34 +311,6 @@ li a.inactivecntct {
   opacity: 40%;
   line-height: 1.7;
 }
-li a.products {
-  display: block;
-  color: #36454f;
-  text-align: left;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 82px;
-  font-family: crimson; 
-  font-weight: bold;
-}
-li a.about {
-  display: block;
-  color: #36454f;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: crimson; 
-  font-weight: bold;
-}
-li a.contact {
-  display: block;
-  color: #36454f;
-  text-align: right;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: crimson; 
-  font-weight: ;
-}
 ul#bar {
   list-style-type: none;
   margin: 0;
@@ -402,14 +327,6 @@ ul#bar li {
 li {
   display: inline;
 }
-li a {
-  //display: block;
-}
-/*li a.active {
-  font-weight: ;
-  font-size: 72px;
-  font-family: 'lato';
-} */
 	
 @media only screen and (min-device-width: 768px) {  
 	
@@ -438,63 +355,12 @@ h1, h2, h3, h4 {
     height: 75px;
     margin-top: -10px;
 }
-.help {
-    height: 60px;
-    margin-top: -4px;
-}
-#navbar {
-  overflow: hidden;
-  background-color: white;
-  text-align: right;
-  margin-right: 24px;
-  margin-top: 0px;
-  font-size: 24px;
-}
-#navbar a {
-  display: inline-block;
-  color: #36454f;
-  text-align: center;
-  padding: ;
-  text-decoration: none;
-  font-size: 24px;
-}
-.menu {
-   border: 1px solid #fff;
-   width: px;
-   display: flex;
-   justify-content: space-around;
-   font-size: 28px;
-   font-weight: 200;
-   margin-top: px;
-}
-.star {
-    width: 20px;
-    margin-bottom: 18px;
-    margin-right: 6px;
-}    
 .title {
     margin-left: 36px;
     margin-top: 24px;
     font-family: lato-light;
     opacity: 100%;
 }       
-.project-grid-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 54px;
-}        
-.project-grid {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-} 
-.figure {
-    text-align: center;
-    margin-bottom: 36px;
-    margin-top: 28px;
-    justify-content: flex-start;
-    display: flex;
-}
 .container {
 	display: flex;
 	margin-left: 6px;
@@ -746,143 +612,6 @@ a.project-subheader1 {
    font-family: ;
    opacity: 100%;
 }        
-#nav-toggle { position: absolute; margin-right: 32px; margin-top: 33px; opacity: 100%; }
-#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  cursor: pointer;
-  border-radius: 12px;
-  height: 2px;
-  width: 68px;
-  background: #36454f;
-  position: absolute;
-  display: block;
-  content: '';
-  text-align: right;
-}    
-#nav-toggle span:before {
-  top: -16px; 
-}    
-#nav-toggle span:after {
-  bottom: -16px;
-}
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  transition: all 355ms ease-in-out;
-}   
-#nav-toggle.active span {
-  background-color: transparent;
-}    
-#nav-toggle.active span:before, #nav-toggle.active span:after {
-  top: 0;
-}   
-#nav-toggle.active span:before {
-  transform: rotate(45deg);
-}    
-#nav-toggle.active span:after {
-  transform: rotate(-45deg);
-}    
-.nav-list {
-  display: block;
-  font-size: 23px;
-} 
-button.soft {
-  padding: 0;
-  border: none;
-  outline: none;
-  font: inherit;
-  color: inherit;
-  background: none;
-  margin-right: 24px;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  overflow: auto;
-  z-index: 1;
-  font-size: 16px;
-  margin-top: 44px;
-  margin-left: 8px;
-}
-.show {display: block;}
-a.link {
-    color: #36454f;
-    border-bottom: 0px;
-    font-size: 28px;
-    text-decoration: unset;
-    font-weight: 300;
-}		
-@-moz-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -moz-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -moz-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    -moz-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
-}
-@-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    -webkit-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
-}
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -moz-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    -moz-transform: translateY(-15px);
-    -ms-transform: translateY(-15px);
-    -webkit-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
-}
-i {
-   display: block;
-   color: #36454f;
-}
-.arrow {
-   position: absolute;
-   bottom: 0;
-   left: 50%;
-   margin-left: 0px;
-   width: 40px;
-   height: 60px;
-   opacity: 55%;
-}
-.bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
-}
-.navbar {
-   background-color: white; 
-   top: 0;
-   position: fixed;
-   width: 100%;
-   padding-bottom: 25px;
-}
 .table {
    display: table; 
    margin: 0 auto;
@@ -904,9 +633,6 @@ ul#bar li {
 }
 li {
   display: inline;
-}
-li a {
-  //display: block;
 }
 li a.active {
   font-weight: ;
@@ -932,45 +658,6 @@ li a.inactivecntct {
   font-size: 80px;
   font-weight: bold;
   line-height: 1;
-}
-li a.products {
-  display: block;
-  color: #36454f;
-  text-align: left;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 82px;
-  font-family: crimson; 
-  font-weight: bold;
-  text-decoration: underline;
-}
-li a.about {
-  display: block;
-  color: #36454f;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: crimson; 
-  font-weight: bold;
-}
-li a.contact {
-  display: block;
-  color: #36454f;
-  text-align: right;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: crimson; 
-  font-weight: bold;
-}
-.icon1 {
-    width: 65px;
-    margin-top: 77px; 
-    margin-left: 32px;
-}
-.icon2 {
-    width: 65px;
-    margin-top: 77px; 
-    margin-left: -2px;
 }
 }
 }
