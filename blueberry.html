@@ -7,18 +7,10 @@
 <link href="https://fonts.googleapis.com/css?family=Lato:thin,light,regular,bold" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display" rel="stylesheet">
 <style>
-/*@font-face {
-    font-family: 'lato', sans serif;
-    src: url(Lato-Light.ttf);
-} */ 
 @font-face {
     font-family: dmserif;
     src: url(DMSerifDisplay-Regular.ttf);
 }
-/* @font-face {
-    font-family: crimson;
-    src: url(CrimsonText-Regular.ttf);
-} */
 body {	
     font-family: 'lato', sans serif;
     color: #36454f;	
@@ -45,12 +37,6 @@ h1, h2, h3, h4 {
     margin-top: -5px;
     font-size: 54px;
 }  
-.clipboard {
-    width: 28px;
-    margin-bottom: 06px;
-    margin-right: 2px;
-    margin-left: -24px;
-} 
 .intro {
     font-size: 24px;
     text-align: center;
@@ -68,15 +54,6 @@ h1, h2, h3, h4 {
     margin-right: 12px;
     line-height: 1.7;
     margin-top: -48px;
-}
-.dots {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -23px;
-    margin-bottom: 38px;
-    height: 9px;
-    width: 25px;
 }
 .project-block {
     text-align: center;
@@ -164,40 +141,6 @@ a {
     margin-bottom: 54px;
     margin-left: auto;
     margin-right: -3px;
-}
-#nav-toggle { position: absolute; right: 5%; top: 5%; }
-#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 1px;
-  width: 28px;
-  background: black;
-  position: absolute;
-  display: block;
-  content: '';
-  text-align: right;
-}    
-#nav-toggle span:before {
-  top: -8px; 
-}    
-#nav-toggle span:after {
-  bottom: -8px;
-}
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  transition: all 325ms ease-in-out;
-}    
-#nav-toggle.active span {
-  background-color: transparent;
-}    
-#nav-toggle.active span:before, #nav-toggle.active span:after {
-  top: 0;
-}    
-#nav-toggle.active span:before {
-  transform: rotate(45deg);
-}    
-#nav-toggle.active span:after {
-  transform: rotate(-45deg);
 }
 .container {
     display: flex;
@@ -287,7 +230,6 @@ a {
     display: flex;
     height: 163.5px;
     margin-left: -24px;
-    /*-webkit-box-reflect:  below -6px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(60%, transparent), to(rgba(555, 555, 555, 0.3))); */
 }
 .item10 {
     font-size: 24px;
@@ -314,25 +256,6 @@ a {
     margin-right: 82px;
     text-align: left;
 }
-button.soft {
-  padding: 0;
-  border: none;
-  outline: none;
-  font: inherit;
-  color: inherit;
-  background: none;
-  margin-right: 24px;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  overflow: auto;
-  z-index: 1;
-  font-size: 24px;
-  margin-top: 50px;
-  margin-left: -9px;
-}
-.show {display: block;}
 a.link {
     color: #36454f;
     border-bottom: 0px;
@@ -340,13 +263,6 @@ a.link {
     text-decoration: unset;
     font-weight: 300;
     font-family: lato;
-}
-.navbar {
-   background-color: white; 
-   top: 0;
-   /*position: fixed;*/
-   width: 100%;
-   /*padding-bottom: 25px;*/
 }
 .table {
    display: table; 
@@ -368,10 +284,6 @@ ul#bar li {
 }
 li {
   display: inline;
-}
-li a {
-  //display: block;
-  //font-size: 42px;
 }
 li a.active {
   font-weight: bold;
@@ -406,37 +318,7 @@ li a.inactivecntct {
     font-weight: bold;
     opacity: 100%;
     font-family: lato;
-}
-.title2 {
-    margin-left: 36px;
-    margin-top: 14px;
-    text-shadow: -1px 4px 2px #ececec;
-    opacity: 50%;
-    font-weight: bold;
-    font-family: 'dm serif display';
-}  
-.clipboard {
-    width: 38px;
-    margin-bottom: 07px;
-    margin-right: 3px;
-    margin-left: 0px;
 } 
-.dots {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 72px;
-    margin-bottom: 0px;
-    height: 19px;
-    width: 26px;
-    opacity: 65%;
-}    
-.greeting {
-    font-size: 119px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 54px;
-}    
 a {
     color: #36454f;
     border-bottom: 0px;
@@ -500,7 +382,7 @@ a.li {
     margin-bottom: 28px;
     line-height: 1.5;
 }    
-.process-subheaderproblem {
+.process-subheader-problem {
     font-size: 21px;
     margin-left: 320px;
     margin-right: 258px;
@@ -508,7 +390,7 @@ a.li {
     line-height: 1.5;
     text-align: left;
 } 
-.process-subheaderproject {
+.process-subheader-project {
     font-size: 21px;
     margin-left: 320px;
     margin-right: 258px;
@@ -577,51 +459,11 @@ a.li {
 }
 .logo {
     height: 45px;
-    /*width: 55px;*/
     text-align: center;
     margin-top: 12px; 
     margin-bottom: -1px;
     margin-left: auto;
     margin-right: -3px;
-}
-#nav-toggle { position: absolute; margin-right: 36px; margin-top: 42px; opacity: 50%;}
-#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 1px;
-  width: 74px;
-  background: #36454f;
-  position: absolute;
-  display: block;
-  content: '';
-  text-align: right;
-  box-shadow: -1px 4px 2px #ececec;
-}   
-#nav-toggle span:before {
-  top: -19px; 
-}    
-#nav-toggle span:after {
-  bottom: -19px;
-}
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  transition: all 355ms ease-in-out;
-}    
-#nav-toggle.active span {
-  background-color: transparent;
-}    
-#nav-toggle.active span:before, #nav-toggle.active span:after {
-  top: 0;
-}    
-#nav-toggle.active span:before {
-  transform: rotate(45deg);
-}    
-#nav-toggle.active span:after {
-  transform: rotate(-45deg);
-}    
-.nav-list {
-  display: block !important;
-  font-size: 23px;
 }
 .container {
     display: flex;
@@ -711,7 +553,6 @@ a.li {
     display: flex;
     height: 363.5px;
     margin-left: -42px;
-    /*-webkit-box-reflect:  below -6px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(60%, transparent), to(rgba(555, 555, 555, 0.3))); */
 }
 .item10 {
     font-size: 24px;
@@ -738,25 +579,6 @@ a.li {
     margin-right: 38px;
     text-align: left;
 }
-button.soft {
-  padding: 0;
-  border: none;
-  outline: none;
-  font: inherit;
-  color: inherit;
-  background: none;
-  margin-right: 24px;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  overflow: auto;
-  z-index: 1;
-  font-size: 24px;
-  margin-top: 55px;
-  margin-left: -42px;
-}
-.show {display: block;}
 a.link {
     color: #36454f;
     border-bottom: 0px;
@@ -764,13 +586,6 @@ a.link {
     text-decoration: unset;
     font-weight: 300;
     font-family: lato;
-}
-.navbar {
-   background-color: white; 
-   top: 0;
-   /*position: fixed;*/
-   width: 100%;
-   /*padding-bottom: 25px;*/
 }
 .table {
    display: table; 
@@ -861,7 +676,7 @@ li a.inactivecntct {
 <div class="project-block2">
 <img class="project-image1" src="Screen Shot 2020-04-11 at 4.42.47 PM.png"> 
 <h3 class="process-header">problem space</h3>
-<h4 class="process-subheaderproblem">users traversed a winding route through the originial product - i sought to simplify the users' journey, reducing page traversals by consolidating product information and highlighting meaningful content that aligned with user interactions</h4>
+<h4 class="process-subheader-problem">users traversed a winding route through the originial product - i sought to simplify the users' journey, reducing page traversals by consolidating product information and highlighting meaningful content that aligned with user interactions</h4>
 </div>
     
 <div class="container">
@@ -883,7 +698,7 @@ li a.inactivecntct {
 <div class="project-block">
 <img class="project-image4" src="Screen Shot 2020-04-11 at 5.20.49 PM.png">
 <h3 class="process-header">usability testing</h3>
-<h4 class="process-subheaderproblem">users were tested in-person or online. brand-unfamiliar users noted that they felt the original design had done little to bring them to sign up for a membership, commenting that assets did not meaningfully highlight product features or answer basic questions about product usage or function<br><br>our updated design was seen as highlighting important key features, making the product easier to understand and learn more about<br><br>brand-familiar users, however, noted that they felt both designs were in line with the expected product experience</h4>
+<h4 class="process-subheader-problem">users were tested in-person or online. brand-unfamiliar users noted that they felt the original design had done little to bring them to sign up for a membership, commenting that assets did not meaningfully highlight product features or answer basic questions about product usage or function<br><br>our updated design was seen as highlighting important key features, making the product easier to understand and learn more about<br><br>brand-familiar users, however, noted that they felt both designs were in line with the expected product experience</h4>
 </div>
    
 <div class="container">
@@ -905,7 +720,7 @@ li a.inactivecntct {
 <div class="project-block">
 <img class="project-image3" src="Screen Shot 2018-11-30 at 2.37.29 PM.png">
 <h3 class="process-header">our product</h3>
-<h4 class="process-subheaderproject">leading blueberryx's sign ups by a significant margin, our simplified sign up flow greatly increased brand awarenss in the online space, specifically engaging new users with little to no experience with the brand<br><br>this engagement brought broader platform gains including expanded opportunities for research and new product feedback</h4>
+<h4 class="process-subheader-project">leading blueberryx's sign ups by a significant margin, our simplified sign up flow greatly increased brand awarenss in the online space, specifically engaging new users with little to no experience with the brand<br><br>this engagement brought broader platform gains including expanded opportunities for research and new product feedback</h4>
 </div>
  
 <div class="project-block" style="margin-top: 86px">
