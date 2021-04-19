@@ -325,63 +325,51 @@ a:hover {
     text-align: center;
     opacity: 68%;
 }
-#navbar {
-  overflow: hidden;
-  background-color: white;
-  text-align: right;
-  margin-right: 24px;
-  margin-top: 0px;
-  font-size: 24px;
+.table {
+   display: table; 
+   margin: 0 auto;
+   margin-top: 25px;
+   text-align: center;
 }
-#navbar a {
-  display: inline-block;
-  color: black;
-  text-align: center;
-  padding: ;
-  text-decoration: none;
-  font-size: 24px;
-}
-#navbar a.active {
-  background-color: white;
-  color: black;
-}
-#nav-toggle { position: absolute; margin-right: 18px; margin-top: 18px; opacity: 50%;}
-#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-    cursor: pointer;
-    border-radius: 1px;
-    height: 1px;
-    width: 70px;
-    background: #36454f;
-    position: absolute;
-    display: block;
-    content: '';
-    text-align: right;
-}   
-#nav-toggle span:before {
-    top: -16px; 
-}    
-#nav-toggle span:after {
-    bottom: -16px;
-}
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-    transition: all 355ms ease-in-out;
-}    
-#nav-toggle.active span {
-    background-color: transparent;
-}    
-#nav-toggle.active span:before, #nav-toggle.active span:after {
-    top: 0;
-}    
-#nav-toggle.active span:before {
-    transform: rotate(45deg);
-}    
-#nav-toggle.active span:after {
-    transform: rotate(-45deg);
+ul#bar {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   margin-top: 19px;
 } 
-.nav-list {
-  display: block !important;
-  font-size: 23px;
+ul#bar li {
+   display: inline;
+   padding: 104px;
+   font-family: crimson; 
+   line-height: 1.39;
+}
+li {
+   display: inline;
+}
+li a {
+  //display: block;
+}
+li a.active {
+   font-size: 70px;
+   font-weight: bold;
+   font-family: 'dm serif display';
+   border-bottom: 1px solid #36454f;
+}
+li a.inactiveabt {
+   font-size: 70px;
+   font-weight: bold;
+   font-family: 'dm serif display'; 
+   opacity: 42.5%; 
+   margin-left: 0px; 
+}
+li a.inactivecntct {
+   font-size: 70px;
+   font-weight: bold; 
+   font-family: 'dm serif display'; 
+   opacity: 42.5%; 
+   line-height: 1.39;
+   margin-left: 0px;
 }
     }
         }
@@ -390,16 +378,13 @@ a:hover {
 </head>
 <body>
 
-<!--- <div class="topnav">
-<div id="mylinks">
-<a href="https://nigeldurham.github.io/ux/about.html">about</a>
-<a href="https://nigeldurham.github.io/ux/index.html" style="font-weight: bold">work</a>
-<a href="https://nigeldurham.github.io/ux/contact.html">contact</a>
+<div class="table">
+<ul id="bar">
+<li><a class="active" href="https://nigeldurham.github.io/ux/index.html">Products</a></li>
+<li><a class="inactiveabt" href="https://nigeldurham.github.io/ux/about.html" style="">About</a></li>
+<li><a class="inactivecntct" href="https://nigeldurham.github.io/ux/contact.html" style="">Contact</a></li>
+</ul>
 </div>
-<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-<i class="fa fa-bars"></i>
-</a>
-</div> --->
     
 <div class="title2">
 <a href="https://nigeldurham.github.io/ux/index.html" style="text-align: left">product</a>
@@ -412,14 +397,6 @@ a:hover {
 </div>
 </div>
 </div>
-
-<img class="dots" src="vtriangle.png">
-
-<!--- <div class="project-block">
-    <img class="team" src="musician.png"> 
-    <h3 class="process-header">imagine</h3>
-    <!--- <h4 class="process-subheader">you're a traveling musician: you've just arrived in new york city, with only a few bucks in hand, and are looking for a gig TONIGHT!</h4>
-</div> --->
 
 <div class="project-block">
     <img class="task" src="wireframeresp.png"> 
